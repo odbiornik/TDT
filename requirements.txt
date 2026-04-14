@@ -1,0 +1,5 @@
+numpy
+pyserial
+questplus
+plotly
+openpyxl

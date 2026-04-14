@@ -1,0 +1,32 @@
+TDT Studio - Install / Run / Uninstall (Windows)
+
+1) Quick run (no installation)
+- Double-click: run_tdt_gui.bat
+- This starts the GUI directly from the project folder.
+
+2) Build GUI executable
+- Double-click: build_tdt_gui_exe.bat
+- Output executable:
+  .runtime\build_gui\pyinstaller_dist\TDTConsole.exe
+
+3) Build ONE installer file (recommended for distribution)
+- Double-click: build_tdt_setup.bat
+- Result:
+  installer\output\TDTStudio_Setup.exe
+
+4) Install from setup
+- Send TDTStudio_Setup.exe to another user/PC.
+- Run setup and choose installation folder.
+- Optional desktop shortcut can be enabled during setup.
+- App appears in Windows installed apps list.
+- Session results are saved inside the installation folder:
+  <InstallFolder>\data\sessions
+
+5) Uninstall
+- System uninstall: Settings > Apps > Installed apps > TDT Studio > Uninstall
+- Folder uninstall: run uninstaller in installation folder (unins*.exe)
+
+6) Notes
+- Runtime/build cache is stored in .runtime\ (inside this project).
+- Session data is stored in data\sessions.
+- Connect M5 Atom over USB before starting a session.

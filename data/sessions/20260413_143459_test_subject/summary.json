@@ -1,0 +1,131 @@
+{
+  "config": {
+    "trial_count": 64,
+    "practice_trial_count": 8,
+    "practice_soa_ms": [
+      0,
+      15,
+      30,
+      45,
+      60,
+      75,
+      90,
+      105
+    ],
+    "min_trials_for_early_stop": 32,
+    "min_soa_ms": 0,
+    "max_soa_ms": 100,
+    "step_ms": 1,
+    "flash_duration_ms": 10,
+    "flash_rgb_level": 255,
+    "response_timeout_ms": 8000,
+    "prestim_delay_ms": 500,
+    "inter_trial_interval_ms": 1500,
+    "sd_values_ms": [
+      6
+    ],
+    "lapse_values": [
+      0.01
+    ],
+    "monte_carlo_samples": 5000,
+    "monte_carlo_seed": 12345,
+    "stim_selection_method": "min_entropy",
+    "stim_selection_options": {},
+    "stop_criteria": {
+      "threshold50_ci95_width_ms": 5.0,
+      "mean_entropy_normalized": null,
+      "minimum_sanity_correct_rate": 0.5
+    },
+    "sanity_checks": {
+      "enabled": true,
+      "first_after_adaptive_trials": 5,
+      "interval_adaptive_trials": 5,
+      "sequence": [
+        "zero",
+        "easy"
+      ],
+      "zero_soa_ms": 0,
+      "easy_target_probability": 0.9,
+      "easy_uncertainty_min_margin_ms": 6.0,
+      "easy_uncertainty_ci_fraction": 0.5,
+      "easy_min_soa_ms": 50,
+      "easy_max_soa_ms": 95
+    }
+  },
+  "summary": {
+    "completed_trials": 42,
+    "estimates": {
+      "threshold50_ms": 19.12087492099017,
+      "threshold75_ms": 23.264675645666408,
+      "threshold25_ms": 14.977074196313929,
+      "jnd_ms": 4.14380072467624,
+      "sd_ms": 6.000000000000002,
+      "guess_rate": 0.010000000000000002,
+      "lapse_rate": 0.010000000000000002
+    },
+    "reliability": {
+      "threshold50_mean_ms": 19.12087492099017,
+      "threshold50_median_ms": 18.61738157310783,
+      "threshold50_mode_ms": 19.0,
+      "threshold50_posterior_sd_ms": 1.2537570144070291,
+      "threshold50_iqr_ms": 1.7702659956259374,
+      "threshold50_ci95_low_ms": 16.113777654058985,
+      "threshold50_ci95_high_ms": 21.008574489109396,
+      "threshold50_ci95_width_ms": 4.8947968350504105,
+      "threshold50_mass_within_precision_window": 0.9584236073928025,
+      "threshold75_ci95_low_ms": 21.143800724676236,
+      "threshold75_ci95_high_ms": 26.143800724676236,
+      "threshold75_ci95_width_ms": 5.0,
+      "mean_entropy_bits": 2.3733146266922036,
+      "mean_entropy_normalized": 0.3564492706247487,
+      "mean_focus_score": 0.6435507293752514
+    },
+    "early_stop": {
+      "active": true,
+      "checks": {
+        "enough_trials": true,
+        "threshold50": true,
+        "entropy": true,
+        "sanity": true
+      }
+    },
+    "sanity_checks": {
+      "enabled": true,
+      "total_trials": 8,
+      "valid_trials_total": 8,
+      "correct_trials_total": 8,
+      "correct_rate_total": 1.0,
+      "interval_adaptive_trials": 5,
+      "first_after_adaptive_trials": 5,
+      "sequence": [
+        "zero",
+        "easy"
+      ],
+      "zero_control": {
+        "trials": 4,
+        "valid_trials": 4,
+        "correct_trials": 4,
+        "correct_rate": 1.0
+      },
+      "easy_control": {
+        "trials": 4,
+        "valid_trials": 4,
+        "correct_trials": 4,
+        "correct_rate": 1.0
+      }
+    }
+  },
+  "attempts_total": 42,
+  "adaptive_trials_completed": 42,
+  "sanity_trials_completed": 8,
+  "session_timing": {
+    "started_at": "2026-04-13T14:34:59.403",
+    "completed_at": "2026-04-13T14:37:56.621",
+    "total_duration_s": 177.21895190000032,
+    "total_duration_display": "02:57",
+    "practice_duration_s": 19.826453200000287,
+    "practice_duration_display": "00:20",
+    "adaptive_duration_s": 142.47285150000062,
+    "adaptive_duration_display": "02:22"
+  }
+}
