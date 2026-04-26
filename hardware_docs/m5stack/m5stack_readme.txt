@@ -1,9 +1,9 @@
 ================================================================================
 TECHNICAL DOCUMENTATION:
 ================================================================================
-	
-1. ELEMENTS:
 
+1. ELEMENTS:
+	
 	- M5Stack Atom-Lite SKU:C008, http://docs.m5stack.com/en/core/ATOM%20Lite, x1 
 	- M5Stack Atomic Port ABC Base SKU:A130, http://docs.m5stack.com/en/atom/AtomPortABC, x1
 	- M5Stack Unit RGB SKU:U003, http://docs.m5stack.com/en/unit/rgb, x2
@@ -50,13 +50,15 @@ Dual Button (Blue)  | Atom -> Bottom Port  | GPIO 1   | PIN_BTN_BLUE  | Input
        |             |
  [ RGB Unit #2 ] [ RGB Unit #1 ]
 
-4. TECHNICAL SPECIFICATIONS
----------------------------
-- Signal Routing: Port A/C are routed via the ABC Base circuitry to specific 
-  ESP32-S3 pins. The Bottom Port utilizes the pass-through headers for 
-  direct, low-latency access to GPIO 1 and 2.
-- Latency: Direct connection for the Dual Button ensures the highest precision 
-  for reaction time measurements in psychometric trials.
+
+4. FIRMWARE CONFIGURATION AND DEPLOYMENT 
+----------------------------------------
+To successfully program and deploy firmware to the M5Stack Atom-Lite, you must utilize the configuration and source files provided in the repository. The build process is managed via PlatformIO, ensuring a consistent and reproducible environment.
+
+Required Files:
+
+	- platformio.ini: This is the project configuration file. 
+	- atom.cpp: This main source file contains the core logic for the device
 
 
 ================================================================================
