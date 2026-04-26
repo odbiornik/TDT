@@ -60,6 +60,10 @@ Required Files:
 	- platformio.ini: This is the project configuration file. 
 	- atom.cpp: This main source file contains the core logic for the device
 
+All hardware operations and clinical examinations are conducted via a computer equipped with the TDT Studio software. This dedicated environment ensures proper data acquisition and device management. To set up the workstation, run the standalone installer provided in the package:
+
+	- installer/output/TDTStudio_Setup.exe
+
 
 ================================================================================
 END OF DOCUMENTATION
